@@ -1,3 +1,4 @@
+require 'scraperwiki'
 # encoding: ISO-8859-1
 require 'nokogiri'
 require 'mechanize'
@@ -121,7 +122,7 @@ def action(srch)
   end
 end
 
-#ScraperWiki.sqliteexecute("CREATE TABLE `swdata` (`DOC` timestamp, `FILING_DT` text, `TYPE` text, `COMPANY_NAME` text, `COMPANY_NUMBER` text);")
+#ScraperWiki.sqliteexecute("CREATE TABLE `data` (`DOC` timestamp, `FILING_DT` text, `TYPE` text, `COMPANY_NAME` text, `COMPANY_NUMBER` text);")
 #ScraperWiki.commit()
 
 #save_metadata("TRIAL","R>>RO>>ROC>>ROCK>>ROCKL")
